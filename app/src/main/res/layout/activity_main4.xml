@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:id="@+id/fruitTTAB"
+    tools:context="com.example.grkmaltunay.loginscreen.Main4Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/apple"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+       />
+
+    <Spinner
+        android:id="@+id/fruitsSpinner"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KG:"
+        android:textSize="30dp"
+        android:paddingLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:textSize="30dp"
+            android:id="@+id/priceID"
+            android:text="PRICE"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="-"
+            android:onClick="decrease"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/decrease"/>
+        <TextView
+            android:id="@+id/amountTxtView"
+            android:paddingLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:textSize="30dp"
+            android:text="1"/>
+        <Button
+            android:id="@+id/increaseBTn"
+            android:onClick="increase"
+            android:text="+"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textStyle="bold|italic"
+        android:textSize="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRICE:"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textSize="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TL"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="20dp"
+        android:textSize="40dp"/>
+</LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add to cart"
+        android:id="@+id/addTOCART"/>
+
+
+</LinearLayout>

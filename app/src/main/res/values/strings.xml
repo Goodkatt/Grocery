@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyDCF_qld1IaL6pm0PCek52k5WJZ_aSob7U</string>
+</resources>

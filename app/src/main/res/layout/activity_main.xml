@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.grkmaltunay.loginscreen.MainActivity">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:hint="Enter username"
+    android:id="@+id/userNameEditText"
+    android:drawableLeft="@drawable/user"
+    android:gravity="center"
+    android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter password"
+        android:id="@+id/passwordEditText"
+        android:drawableLeft="@drawable/password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="read"
+        android:layout_gravity="center"
+        android:id="@+id/loginConfirmationButton"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User"
+        android:layout_gravity="center"
+        android:id="@+id/newUser"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
